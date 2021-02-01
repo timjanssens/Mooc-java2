@@ -35,6 +35,7 @@ public class SimpleDate {
         return false;
     }
 
+    @Override
     public boolean equals(Object object) {
 
         if (this == object) {
@@ -44,17 +45,17 @@ public class SimpleDate {
         if (!(object instanceof SimpleDate)) {
             return false;
         }
-        
+
         SimpleDate date = (SimpleDate) object;
-        
+
         if (this.day == date.day
                 && this.month == date.month
-                && this.year == date.year){
+                && this.year == date.year) {
             return true;
         }
-        
+
         return false;
-        
+
     }
 
     public int differenceInYears(SimpleDate other) {

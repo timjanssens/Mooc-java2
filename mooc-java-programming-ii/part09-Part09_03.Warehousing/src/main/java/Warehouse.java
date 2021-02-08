@@ -22,6 +22,7 @@ public class Warehouse {
     public double getCapacity() {
         return this.capacity;
     }
+   
 
     public double howMuchSpaceLeft() {
         return this.capacity - this.balance;
